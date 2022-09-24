@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salarios</title>
+    <link rel="stylesheet" href="./salarios.css">
+</head>
+
+<body>
+    <header>
+        <h1>Salarios</h1>
+        <nav class="nav-bar">
+            <a href="./../Figuras/figuras.html">Figuras</a>
+            <a href="./../Descuentos/descuentos.html">Descuentos</a>
+            <a href="./../Promedios/promedios.html">Promedios</a>
+            <a href="./../index.html">Menu</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <form action="">
+                <label for="inputName">Nombre:</label>
+                <input type="text" id="inputName">
+                <label for="inputSalary">Salario:</label>
+                <input type="number" id="inputSalary">
+                <button type="reset" onclick="addPerson()">Ingresar persona</button>
+                <button type="button" onclick="listTop10()">Top 10</button>
+            </form>
+            <div>
+                <ol id="listPersons"></ol>
+                <ol id="inputTop10"></ol>
+            </div>
+        </section>
+    </main>
+
+    <script src="./salarios.js"></script>
+    <script src="./analisis.js"></script>
+</body>
+
+</html>
